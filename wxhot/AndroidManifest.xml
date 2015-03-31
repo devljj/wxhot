@@ -1,27 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.yiye.wxhot"
-    android:versionCode="1"
-    android:versionName="1.0" >
-
-    <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="21" />
-
-    <application
-        android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name" >
+<manifest android:versionCode="1" android:versionName="1.0" package="com.yiye.wxhot"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <permission android:name="com.yiye.wxhot.permission.JPUSH_MESSAGE" android:protectionLevel="signature" />
+    <uses-permission android:name="com.yiye.wxhot.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <application android:theme="@android:style/Theme.NoTitleBar" android:label="@string/app_name" android:icon="@drawable/logo" android:name="com.yiye.wxhot.WuxihotApplication" android:allowBackup="true">
+        <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="jmUVX0uTYZ8G6rV3vadgKrZF" />
+        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote" />
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="4effbd2206ee657d571db2b6b57371f9" />
+        <activity android:label="@string/app_name" android:name=".BigadsActivity" android:launchMode="singleTask" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:label="@string/app_name" android:name="com.yiye.wxhot.activity.ActivityMapActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:hardwareAccelerated="false" />
+        <activity android:label="@string/app_name" android:name="com.yiye.wxhot.ConnectbleActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" android:name="com.yiye.wxhot.LoginAwifiActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" android:name="com.yiye.wxhot.member.LoginActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" android:name="com.yiye.wxhot.member.MyAccountActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" android:name="com.yiye.wxhot.member.RegisterConfirmActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" android:name="com.yiye.wxhot.member.RegisterEnterCodeActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" android:name="com.yiye.wxhot.member.RegisterActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" android:name="com.yiye.wxhot.MainActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" android:name="com.yiye.wxhot.test.BrowserActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" android:name="com.yiye.wxhot.pointshop.PointshopActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" android:name="com.yiye.wxhot.groupon.GrouponActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" android:name="com.yiye.wxhot.member.MemberActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" android:name="com.yiye.wxhot.pointshop.PointshopDetailActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" android:name="com.yiye.wxhot.member.CostlistActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" android:name="com.yiye.wxhot.member.BrowseHistoryActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" android:name="com.yiye.wxhot.member.MycreelActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" android:name="com.yiye.wxhot.member.NoticeActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" android:name="com.yiye.wxhot.member.NoticedetailActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" android:name="com.yiye.wxhot.more.AboutusActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" android:name="com.yiye.wxhot.more.BusinessActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" android:name="com.yiye.wxhot.groupon.GroupondetailActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" android:name="com.yiye.wxhot.groupon.PlaceorderActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" android:name="com.yiye.wxhot.groupon.ChoosePaywayActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" android:name="com.yiye.wxhot.groupon.PaysuccessActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" android:name="com.yiye.wxhot.activity.ActivityDetailActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" android:name="com.yiye.wxhot.activity.CouponActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" android:name="com.yiye.wxhot.more.MoreActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" android:name="com.yiye.wxhot.member.MyOrderActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" android:name="com.yiye.wxhot.groupon.GrouponListActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" android:name="com.yiye.wxhot.FullscreenActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" android:name="com.yiye.wxhot.activity.ActivityListActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" android:name="com.yiye.wxhot.HotActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" android:name="com.yiye.wxhot.SearchActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" android:name="com.yiye.wxhot.activity.ActivitySearchActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" android:name="com.yiye.wxhot.groupon.GrouponMapActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" android:name="com.yiye.wxhot.member.FindPwdActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" android:name="com.yiye.wxhot.member.FindPwdConfirmActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" android:name="com.yiye.wxhot.member.FindPwdEnterCodeActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="cn.sharesdk.framework.ShareSDKUIShell" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name=".wxapi.WXEntryActivity" android:exported="true" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name=".yxapi.YXEntryActivity" android:exported="true" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <service android:name="cn.jpush.android.service.PushService" android:enabled="true" android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+        <receiver android:name="cn.jpush.android.service.PushReceiver" android:enabled="true">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                <category android:name="com.yiye.wxhot" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="cn.jpush.android.ui.PushActivity" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.yiye.wxhot" />
+            </intent-filter>
+        </activity>
+        <service android:name="cn.jpush.android.service.DownloadService" android:enabled="true" android:exported="false" />
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+        <meta-data android:name="JPUSH_CHANNEL" android:value="developer-default" />
+        <meta-data android:name="JPUSH_APPKEY" android:value="16d314e6f61aa50365cd17b4" />
     </application>
-
 </manifest>
