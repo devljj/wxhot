@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/white" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_marginTop="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/textview_border" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/pointshoppic" android:layout_width="110.0dip" android:layout_height="110.0dip" />
+        </LinearLayout>
+        <RelativeLayout android:orientation="vertical" android:id="@id/activitydesc" android:layout_width="wrap_content" android:layout_height="110.0dip" android:layout_marginLeft="15.0dip">
+            <TextView android:id="@id/activitytitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_alignParentTop="true" style="@style/orderlisttitlestyle" />
+            <TextView android:id="@id/activitytitle2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_alignParentTop="true" style="@style/orderlisttitlestyle" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginTop="30.0dip" android:layout_below="@id/activitytitle2">
+                <TextView android:id="@id/pointshopprice" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/orderliststyle" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="元" style="@style/orderliststyle" />
+                <TextView android:id="@id/productid" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:id="@id/distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" style="@style/orderliststyle" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="m" style="@style/orderliststyle" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

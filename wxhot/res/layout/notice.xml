@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/aboveLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/app_top" />
+    <ScrollView android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/topwrap">
+        <LinearLayout android:orientation="vertical" android:id="@id/fragmentContent" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TableRow android:id="@id/tableRow111" android:background="@color/columnback" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginTop="10.0dip">
+                    <TextView android:id="@id/noticeid1" android:text="开学了，该准备上学的文具了...      2014.12.31" style="@style/noticeitemstyle" />
+                </TableRow>
+                <TableRow android:id="@id/tableRow112" android:background="@color/columnback" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginTop="10.0dip">
+                    <TextView android:id="@id/noticeid2" android:text="开学了，该准备上学的文具了...     2014.12.31" style="@style/noticeitemstyle" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

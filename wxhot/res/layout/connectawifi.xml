@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/startpagemainstyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:layout_width="76.0dip" android:layout_height="60.0dip" android:layout_marginTop="80.0dip" android:src="@drawable/startpage1" />
+    <TextView android:textColor="@color/startpagebtnlightcolor" android:gravity="center" android:id="@id/textview1" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="检测到Awifi，是否连接Awifi" />
+    <Button android:textColor="@color/white" android:layout_gravity="center" android:id="@id/connectbtn" android:background="@color/startpagebtnlightcolor" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="60.0dip" android:text="是" />
+    <Button android:textColor="@color/white" android:layout_gravity="center" android:id="@id/notconnectbtn" android:background="@color/startpagebtndarkcolor" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="20.0dip" android:text="否" />
+</LinearLayout>

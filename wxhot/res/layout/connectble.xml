@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/startpagenew2mainstyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="30.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/textview0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:text="蓝牙" />
+    <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/textview1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="请确保蓝牙已经打开" />
+    <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/textview2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="如未打开，请在设置里面打开蓝牙" />
+    <Button android:textColor="@color/white" android:layout_gravity="center" android:id="@id/connectbtn" android:background="@drawable/awifibtn" android:layout_width="235.0dip" android:layout_height="40.0dip" android:layout_marginTop="60.0dip" android:text="进入热点" />
+</LinearLayout>

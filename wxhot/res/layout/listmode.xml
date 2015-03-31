@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="美食" />
+    <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TableRow android:id="@id/tableRow111" android:background="@drawable/textview_border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <LinearLayout android:orientation="horizontal" android:id="@id/activityitem1" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="110.0dip" android:layout_height="110.0dip" android:src="@drawable/g2" />
+                </LinearLayout>
+                <RelativeLayout android:id="@id/activitydesc" android:layout_width="fill_parent" android:layout_height="110.0dip" android:layout_marginLeft="15.0dip">
+                    <TextView android:id="@id/activitytitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="许府牛" android:layout_alignParentTop="true" style="@style/orderlisttitlestyle" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/prodescinfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/activitytitle">
+                        <TextView android:id="@id/activitytitle1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="价格：85元" style="@style/orderliststyle" />
+                        <TextView android:id="@id/activitytitle2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="实体店价格：100元" style="@style/orderliststyle" />
+                    </LinearLayout>
+                    <TextView android:gravity="center" android:id="@id/activitytitle4" android:layout_width="100.0dip" android:layout_height="25.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:text="团购详情" android:layout_below="@id/prodescinfo" android:layout_alignParentRight="true" style="@style/homemerchantbuttonstyle" />
+                </RelativeLayout>
+            </LinearLayout>
+        </TableRow>
+        <TableRow android:id="@id/tableRow112" android:background="@drawable/textview_border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <LinearLayout android:orientation="horizontal" android:id="@id/activityitem2" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="110.0dip" android:layout_height="110.0dip" android:src="@drawable/g1" />
+                </LinearLayout>
+                <RelativeLayout android:id="@id/activitydesc1121" android:layout_width="fill_parent" android:layout_height="110.0dip" android:layout_marginLeft="15.0dip">
+                    <TextView android:id="@id/activitytitle1121" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="胖哥俩肉蟹煲" android:layout_alignParentTop="true" style="@style/orderlisttitlestyle" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/prodescinfo1121" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/activitytitle1121">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="价格：88元" style="@style/orderliststyle" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="实体店价格：100元" style="@style/orderliststyle" />
+                    </LinearLayout>
+                    <TextView android:gravity="center" android:id="@id/activitytitle1124" android:layout_width="100.0dip" android:layout_height="25.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:text="团购详情" android:layout_below="@id/prodescinfo1121" android:layout_alignParentRight="true" style="@style/homemerchantbuttonstyle" />
+                </RelativeLayout>
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

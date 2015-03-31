@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/aboveLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/app_top" />
+    <ScrollView android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/topwrap">
+        <LinearLayout android:orientation="vertical" android:id="@id/fragmentContent" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/black" android:gravity="center" android:id="@id/producttitle" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="@string/testproducttitle" />
+            <TextView android:textColor="@color/black" android:gravity="left" android:id="@id/productcontent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/testproductcontent" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginBottom="5.0dip" android:layout_alignParentBottom="true">
+        <Button android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/queryexchange" android:background="@drawable/awifibtn" android:layout_width="235.0dip" android:layout_height="40.0dip" android:text="确认兑换" />
+    </LinearLayout>
+</RelativeLayout>

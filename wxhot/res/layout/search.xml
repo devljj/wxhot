@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <ImageView android:id="@id/return1" android:layout_width="15.0dip" android:layout_height="25.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="12.0dip" android:src="@drawable/title1" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_weight="8.0">
+            <ImageView android:layout_width="11.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/left1" />
+            <LinearLayout android:orientation="horizontal" android:background="#ffeeeeee" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginTop="10.0dip" android:layout_weight="8.0">
+                <ImageView android:layout_width="18.0dip" android:layout_height="20.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="7.0dip" android:src="@drawable/searchicon1" />
+                <EditText android:textSize="14.0sp" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/searchKeyword" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="30.0dip" android:hint="请输入商家、分类" android:singleLine="true" android:imeOptions="actionSearch" />
+            </LinearLayout>
+            <ImageView android:layout_width="13.0dip" android:layout_height="30.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/right1" />
+        </LinearLayout>
+        <TextView android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/cancelbtn" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:text="取消" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/searchlist" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

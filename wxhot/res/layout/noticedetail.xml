@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/aboveLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/app_top" />
+    <ScrollView android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/topwrap">
+        <LinearLayout android:orientation="vertical" android:id="@id/fragmentContent" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="25.0dip" android:text="快讯：沪指涨逾3%创逾5年新高 突破3300点" />
+            <TextView android:textColor="@color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="20.0dip" android:text="2015年01月05日 13:12" style="@style/noticeitemstyle" />
+            <TextView android:textColor="@color/black" android:gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/noticecontent" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/bottomList" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/textview_border" android:paddingTop="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/homepage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/gotohome" android:src="@drawable/home1" style="@style/appbottomimgstyle" />
+            <TextView android:textColor="@color/fontcolor" android:id="@id/gotohometv" android:text="@string/homepage" style="@style/appbottomtextviewstyle" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/pointshop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/gotopointshop" android:src="@drawable/apointshop" style="@style/appbottomimgstyle" />
+            <TextView android:id="@id/gotopointshoptv" android:text="@string/pointshop" style="@style/appbottomtextviewstyle" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/membercenter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/gotomemberhome" android:src="@drawable/amemberhome" style="@style/appbottomimgstyle" />
+            <TextView android:id="@id/gotomemberhometv" android:text="@string/membercenter" style="@style/appbottomtextviewstyle" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/gotomore" android:src="@drawable/amore" style="@style/appbottomimgstyle" />
+            <TextView android:id="@id/gotomoretv" android:text="@string/more" style="@style/appbottomtextviewstyle" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

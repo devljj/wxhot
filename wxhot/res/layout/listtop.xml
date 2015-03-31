@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/listtopwrap1" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/topwrap" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <ImageView android:id="@id/return1" android:layout_width="15.0dip" android:layout_height="25.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="12.0dip" android:src="@drawable/title1" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/return2" android:layout_width="34.0dip" android:layout_height="35.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="7.0dip" android:src="@drawable/title2" android:layout_toRightOf="@id/return1" android:layout_centerHorizontal="true" />
+        <TextView android:gravity="left" android:id="@id/checkinbtn" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/pointshop" android:layout_toRightOf="@id/return2" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/tophead" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/showmode" android:layout_width="80.0dip" android:layout_height="50.0dip" android:layout_alignParentRight="true">
+        <TextView android:textSize="14.0sp" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/mapmode" android:background="@color/notlistselected" android:layout_width="40.0dip" android:layout_height="20.0dip" android:text="@string/map" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/listmode" android:background="@color/listselected" android:layout_width="40.0dip" android:layout_height="20.0dip" android:text="列表" />
+    </LinearLayout>
+</RelativeLayout>

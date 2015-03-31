@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/aboveLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/app_top" />
+    <LinearLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0px" android:layout_height="0.0px" />
+    <ScrollView android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/topwrap">
+        <LinearLayout android:orientation="vertical" android:id="@id/fragmentContent" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                <TextView android:id="@id/enterphonenum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1 请输入手机号码" android:layout_weight="1.0" />
+                <ImageView android:layout_width="14.0dip" android:layout_height="20.0dip" android:src="@drawable/leftarrow" />
+                <TextView android:id="@id/enterverifycode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2 输入验证码" android:layout_weight="1.0" />
+                <ImageView android:layout_width="14.0dip" android:layout_height="20.0dip" android:src="@drawable/leftarrow" />
+                <TextView android:textColor="@color/buttoncolor2" android:id="@id/setpwdcode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3 设置密码" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/enterpwdContent" android:background="@color/white" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <EditText android:textSize="12.0sp" android:id="@id/loginpwd" android:layout_width="fill_parent" android:layout_height="40.0dip" android:hint="请输入密码" android:inputType="textPassword" />
+                <EditText android:textSize="12.0sp" android:id="@id/loginpwd2" android:layout_width="fill_parent" android:layout_height="40.0dip" android:hint="请再次输入密码" android:inputType="textPassword" />
+                <Button android:textColor="@color/white" android:layout_gravity="center" android:id="@id/ensureregisterbtn" android:background="@drawable/awifibtn" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="5.0dip" android:text="确定注册" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TableRow android:id="@id/tableRow111" android:background="@drawable/textview_border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="110.0dip" android:layout_height="110.0dip" android:src="@drawable/activity1" />
+                </LinearLayout>
+                <RelativeLayout android:orientation="vertical" android:id="@id/activitydesc" android:layout_width="wrap_content" android:layout_height="110.0dip" android:layout_marginLeft="5.0dip">
+                    <TextView android:id="@id/activitytitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="吉吉能蛋糕宅急送     1km" android:layout_alignParentTop="true" style="@style/orderlisttitlestyle" />
+                    <TextView android:id="@id/activitytitle2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="【万象区】蛋糕九选一，免费" android:layout_below="@id/activitytitle" style="@style/orderlisttitlestyle2" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="29.8元" android:layout_alignParentBottom="true" style="@style/orderlisttitlestyle2" />
+                </RelativeLayout>
+            </LinearLayout>
+        </TableRow>
+        <TableRow android:id="@id/tableRow112" android:background="@drawable/textview_border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="110.0dip" android:layout_height="110.0dip" android:src="@drawable/activity2" />
+                </LinearLayout>
+                <RelativeLayout android:orientation="vertical" android:id="@id/activitydesc2" android:layout_width="wrap_content" android:layout_height="110.0dip" android:layout_marginLeft="5.0dip">
+                    <TextView android:id="@id/activitytitle22" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="【7店通用】西缘牛排  2km" android:layout_alignParentTop="true" style="@style/orderlisttitlestyle" />
+                    <TextView android:id="@id/activitytitle222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="【惠山区】仅售79.80元！" android:layout_below="@id/activitytitle22" style="@style/orderlisttitlestyle2" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="79.80元" android:layout_alignParentBottom="true" style="@style/orderlisttitlestyle2" />
+                </RelativeLayout>
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
